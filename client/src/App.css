@@ -7,6 +7,13 @@
   overflow: hidden;
 }
 
+h3 {
+  font-family: "Baloo Bhaina", cursive;
+  font-size: 40px;
+}
+h2 {
+  font-family: "Averia Serif Libre", cursive;
+}
 .content-section {
   height: 100vh;
 }
@@ -15,25 +22,198 @@
   color: #990000;
 }
 
-.fa-arrow-right {
-  margin-left: 5px;
+.fa-arrow-alt-circle-right {
+  margin-left: 3px;
 }
 
-.col-lg-3 {
+.service-box {
   transition: box-shadow 0.8s;
+  transition: background-color 0.8s;
+  background-color: aliceblue;
 }
-.col-lg-3:hover {
+.service-box:hover {
   box-shadow: 0 14px 28px lightgrey, 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: white;
 }
 
 .content-section-heading {
   padding-top: 80px;
 }
 
-#services {
-  background-color: aquamarine;
+#title {
+  background-image: url("./img/bg-title.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-
+.title-bar {
+  background-color: white;
+  position: fixed;
+  clear: both;
+  height: 170px;
+  width: 100%;
+  z-index: 2;
+}
+.title-phrase {
+  z-index: 2;
+  color: white;
+  margin-top: 200px;
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 100%;
+}
+.title-phrase span {
+  font-size: 100px;
+}
+.title-phrase #line {
+  width: 200px;
+  background: white;
+  display: block;
+  height: 2px;
+  margin: auto;
+}
+.overlay-left {
+  opacity: 0.6;
+  background-color: black;
+  z-index: 1;
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.overlay-right {
+  opacity: 0.5;
+  background-color: #990000;
+  z-index: 1;
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+.contact-info-title-page {
+  float: right;
+  margin-right: 35px;
+  margin-top: 35px;
+}
+.contact-info-title-page i {
+  margin-right: 5px;
+}
+#about {
+  background-image: url("./img/bg-about1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#about.content-section-heading {
+  font-size: 100px;
+}
+.card-body {
+  font-size: 30px;
+}
+.card {
+  opacity: 0.9;
+}
+#services {
+  background-image: url("./img/bg-service2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.service-name {
+  height: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.service-modal-container h3,
+span {
+  text-align: center;
+}
+.close-icon {
+  text-align: center;
+}
+.learn-more:hover {
+  cursor: pointer;
+}
+#team {
+  background-image: url("./img/bg-team.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.employee-bio {
+  font-size: 60%;
+}
+.employee-picture img {
+  height: 100%;
+  width: 100%;
+}
+.employee-name {
+  font-size: 35px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.employee-picture-modal img {
+  height: 91%;
+  width: 91%;
+}
+.bio-modal,
+.service-modal {
+  z-index: 2;
+  display: inline-block;
+}
+.modal-container {
+  text-align: center;
+}
+#clients {
+  background-image: url("./img/bg-client.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#testimonials {
+  background-image: url("./img/bg-testimonials.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-contrast {
+  color: black;
+  mix-blend-mode: difference;
+}
+.section-contrast h2 {
+  color: white;
+  mix-blend-mode: difference;
+}
+#contact {
+  background-image: url("./img/bg-contact1.jpg");
+  background-repeat: no-repeat;
+  background-position: 38% 40%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contact-phrase {
+  font-size: 25px;
+  width: 500px;
+  margin: auto;
+}
+.contact-info {
+  width: 600px;
+  margin: auto;
+}
+.social-networks {
+  padding-top: 20px;
+  width: 500px;
+  margin: auto;
+}
+.social-networks a {
+  color: black;
+}
+/* on mobile phones */
 @media only screen and (max-width: 768px) {
   .content-section {
     height: 100%;
@@ -44,8 +224,95 @@
   .resize-on-break {
     font-size: 12px;
   }
+  .card-body {
+    font-size: 16.5px;
+  }
+  .clients-container {
+    height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 15px 7px 0px 7px;
+  }
+  .client-card img {
+    width: 100%;
+    height: auto;
+  }
+  .show-on-break {
+    display: block;
+  }
+  .service-modal-container {
+    font-size: 12px;
+  }
+  .service-modal-container h3 {
+    font-size: 21px;
+  }
+  .title-bar {
+    height: 80px;
+  }
+  .title-phrase {
+    margin-top: 100px;
+  }
+  .title-phrase span {
+    font-size: 50px;
+  }
+  .contact-info {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .social-networks {
+    width: 100%;
+  }
+  .contact-modal {
+    margin-top: 135px;
+  }
 }
-@media only screen and (max-height: 725px) {
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  .card-body {
+    font-size: 26px;
+  }
+  .social-networks {
+    padding-top: 120px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service-desc {
+    display: none;
+  }
+  .resize-on-break {
+    font-size: 12px;
+  }
+  .employee-picture {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .card-body {
+    font-size: 27.5px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .pagenation {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1435px) {
+  .pagenation {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 945px) {
+  .employee-picture {
+    height: 70%;
+    width: 70%;
+    margin: auto;
+  }
+}
+
+/* vertical breakpoint */
+/* @media only screen and (max-height: 962px) {
   .content-section {
     height: 100%;
   }
@@ -53,9 +320,25 @@
     display: none;
   }
   .resize-on-break {
-    font-size: 12px;
+    font-size: 16.5px;
   }
-}
+  .card-body {
+    font-size: 16.5px;
+  }
+  .clients-container {
+    height: 450px;
+    overflow-y: scroll;
+    padding: 15px 7px 0px 7px;
+  }
+  .client-card img {
+    width: 100%;
+    height: auto;
+  }
+  .show-on-break {
+    display: block;
+  }
+} */
+/* on large devices */
 @media only screen and (min-width: 768px) {
   .col-lg-3 {
     transition: box-shadow 0.8s;
@@ -63,5 +346,8 @@
     padding-bottom: 25px;
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .show-on-break {
+    display: none;
   }
 }

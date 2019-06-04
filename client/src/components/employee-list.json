@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "imgPath": "http://www.fiala.ca/wp-content/uploads/2016/02/dustin-blommaert-cut.png",
+    "employeeName": "Dustin Blommaert",
+    "employeeBio": "Dustin is an IT wizard specializing in Windows and Linux administration / support. He has earned his CompTIA A+ certification and is currently working towards a Security certification. In his down time Dustin enjoys climbing and video games. He is also a big fan of bow ties."
+  },
+  {
+    "id": 2,
+    "imgPath": "",
+    "employeeName": "Martina Bloem",
+    "employeeBio": ""
+  },
+  {
+    "id": 3,
+    "imgPath": "",
+    "employeeName": "Bryan",
+    "employeeBio": ""
+  }
+]

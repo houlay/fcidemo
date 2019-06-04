@@ -1,0 +1,32 @@
+.fci-logo {
+  position: fixed;
+  margin-top: 60px;
+  margin-left: 40px;
+  z-index: 2;
+}
+img {
+  height: 50px;
+  width: auto;
+}
+.fci-name {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 5px;
+  float: right;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  .fci-logo {
+    margin-top: 12px;
+    margin-left: 12px;
+    opacity: 0.8;
+  }
+  .fci-name {
+    display: none;
+  }
+}
+@media only screen and (max-width: 910px) {
+  .fci-name {
+    display: none;
+  }
+}
