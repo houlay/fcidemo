@@ -4,7 +4,7 @@ const Title = () => {
   return (
     <div>
       <div className="content-section" id="title">
-        <div className="title-bar">
+        {/* <div className="title-bar">
           <div className="contact-info-title-page hide-on-break">
             <div className="mb-3">
               <i className="fas fa-home" />
@@ -19,7 +19,7 @@ const Title = () => {
               <span>1 (587) 885-1123</span>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="overlay-left" />
         <div className="overlay-right" />
         <div className="container text-center">

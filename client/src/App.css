@@ -1,19 +1,8 @@
-.App {
-  position: relative;
-
-  width: 100%;
-  height: 100%;
-
-  overflow: hidden;
-}
-
 h3 {
   font-family: "Baloo Bhaina", cursive;
   font-size: 40px;
 }
-h2 {
-  font-family: "Averia Serif Libre", cursive;
-}
+
 .content-section {
   height: 100vh;
 }
@@ -40,12 +29,22 @@ h2 {
   padding-top: 80px;
 }
 
+.navbar a:hover {
+  cursor: pointer;
+}
+.modal-dialog {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  width: 98%;
+  transform: translate(-50%, -50%) !important;
+}
+
 #title {
   background-image: url("./img/bg-title.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .title-bar {
   background-color: white;
@@ -56,7 +55,6 @@ h2 {
   z-index: 2;
 }
 .title-phrase {
-  z-index: 2;
   color: white;
   margin-top: 200px;
   position: absolute;
@@ -78,7 +76,6 @@ h2 {
   opacity: 0.6;
   background-color: black;
   z-index: 1;
-  position: fixed;
   width: 50%;
   height: 100%;
   float: left;
@@ -104,7 +101,6 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 #about.content-section-heading {
   font-size: 100px;
@@ -120,7 +116,6 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .service-name {
   height: 50px;
@@ -142,7 +137,6 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .employee-bio {
   font-size: 60%;
@@ -153,7 +147,6 @@ span {
 }
 .employee-name {
   font-size: 35px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 .employee-picture-modal img {
   height: 91%;
@@ -172,14 +165,12 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 #testimonials {
   background-image: url("./img/bg-testimonials.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .section-contrast {
   color: black;
@@ -194,7 +185,6 @@ span {
   background-repeat: no-repeat;
   background-position: 38% 40%;
   background-size: cover;
-  background-attachment: fixed;
 }
 .contact-phrase {
   font-size: 25px;
@@ -216,7 +206,7 @@ span {
 /* on mobile phones */
 @media only screen and (max-width: 768px) {
   .content-section {
-    height: 100%;
+    height: 100vh;
   }
   .hide-on-break {
     display: none;
