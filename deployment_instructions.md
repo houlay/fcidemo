@@ -15,7 +15,9 @@
 To avoid conflict, and for good practice, never edit directly in the master branch, create a local branch that mirrors the master first:
 
 - at the root level of the project, run `git checkout -b FCI` as this will create a new branch in the repo called FCI
-  Make sure to commit and push to a branch everytime you edit any files:
+
+Make sure to commit and push to a branch everytime you edit any files:
+
 - `git status` to see which files are modified locally
 - `git add .` and then `git commit -m "type your commit comment here"`
 - finally `git push origin FCI` to push your changes to the branch on the repo
