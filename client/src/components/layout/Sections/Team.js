@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import employeeList from "../../employee-list.json";
+import dustin from "../../../img/employees/dustin.png";
+import martina from "../../../img/employees/martina.jpg";
+import bryan from "../../../img/employees/bryan.png";
 
 export default class Clients extends Component {
   state = {
-    employeeList: employeeList,
     toggleOnOff0: "modal bio-modal d-none",
     toggleOnOff1: "modal bio-modal d-none",
     toggleOnOff2: "modal bio-modal d-none"
@@ -39,11 +40,11 @@ export default class Clients extends Component {
             </div>
             <div className="team-container">
               <div className="row">
-                <div className="team-card col-lg-4 col-md-12 col-12 mb-3 mb-lg-5 animated zoomIn delay-1s">
+                <div className="team-card col-lg-4 col-md-12 col-12 mb-3 mb-lg-5">
                   <div className="card shadow">
                     <div className="card-body">
                       <div className="employee-name mb-3">
-                        <span>{this.state.employeeList[0].employeeName}</span>
+                        <span>Dustin Blommaert</span>
                       </div>
                       <div className="click-for-more show-on-break text-info">
                         <i
@@ -51,24 +52,28 @@ export default class Clients extends Component {
                           onClick={this.clickToShowMore0}
                         />
                       </div>
-                      <div className="employee-picture hide-on-break">
-                        <img
-                          src={this.state.employeeList[0].imgPath}
-                          alt={this.state.employeeList[0].employeeName}
-                        />
+                      <div className="employee-picture dustin hide-on-break">
+                        <img src={dustin} alt="Dustin" />
                       </div>
                       <div className="employee-bio hide-on-break">
-                        <span>{this.state.employeeList[0].employeeBio}</span>
+                        <span>
+                          Dustin is an IT wizard specializing in Windows and
+                          Linux administration / support. He has earned his
+                          CompTIA A+ certification and is currently working
+                          towards his RHCSA. In his down time Dustin enjoys
+                          chilling with his pup and PlayStation trophy hunting.
+                          He is also a big fan of bow ties.
+                        </span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="team-card col-lg-4 col-md-12 col-12 mb-3 mb-lg-5 animated zoomIn delay-1s">
+                <div className="team-card col-lg-4 col-md-12 col-12 mb-3 mb-lg-5">
                   <div className="card shadow">
                     <div className="card-body">
                       <div className="employee-name mb-3">
-                        <span>{this.state.employeeList[1].employeeName}</span>
+                        <span>Martina Bloem</span>
                       </div>
                       <div className="click-for-more show-on-break text-info">
                         <i
@@ -76,24 +81,28 @@ export default class Clients extends Component {
                           onClick={this.clickToShowMore1}
                         />
                       </div>
-                      <div className="employee-picture hide-on-break">
-                        <img
-                          src={this.state.employeeList[1].imgPath}
-                          alt={this.state.employeeList[1].employeeName}
-                        />
+                      <div className="employee-picture martina hide-on-break">
+                        <img src={martina} alt="Martina" />
                       </div>
                       <div className="employee-bio hide-on-break">
-                        <span>{this.state.employeeList[1].employeeBio}</span>
+                        <span>
+                          Martina is an ambition and resourceful professional
+                          with over 20 years of administration experience. She
+                          provides the office administration and finance
+                          support, leaving the IT work to our experts! In her
+                          spare time she enjoys cuddling with her cats and
+                          playing video games.
+                        </span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="team-card col-lg-4 col-md-12 col-12 mb-3 mb-lg-5 animated zoomIn delay-1s">
+                <div className="team-card col-lg-4 col-md-12 col-12 mb-3 mb-lg-5">
                   <div className="card shadow">
                     <div className="card-body">
                       <div className="employee-name mb-3">
-                        <span>{this.state.employeeList[2].employeeName}</span>
+                        <span>Bryan Ramos</span>
                       </div>
                       <div className="click-for-more show-on-break text-info">
                         <i
@@ -101,14 +110,17 @@ export default class Clients extends Component {
                           onClick={this.clickToShowMore2}
                         />
                       </div>
-                      <div className="employee-picture hide-on-break">
-                        <img
-                          src={this.state.employeeList[2].imgPath}
-                          alt={this.state.employeeList[2].employeeName}
-                        />
+                      <div className="employee-picture bryan hide-on-break">
+                        <img src={bryan} alt="Bryan" />
                       </div>
                       <div className="employee-bio hide-on-break">
-                        <span>{this.state.employeeList[2].employeeBio}</span>
+                        <span>
+                          Bryan is an IT prodigy specializing in help desk and
+                          computer support. He has earned his CompTIA A+
+                          certification and is currently looking towards in
+                          increasing and learning more skills. Bryan enjoys the
+                          sport of basketball, music and cars.{" "}
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -124,17 +136,21 @@ export default class Clients extends Component {
               <div className="modal-content">
                 <div className="modal-body">
                   <div className="employee-name mb-3">
-                    <span>{this.state.employeeList[0].employeeName}</span>
+                    <span>Dustin Blommaert</span>
                   </div>
 
-                  <div className="employee-picture-modal">
-                    <img
-                      src={this.state.employeeList[0].imgPath}
-                      alt={this.state.employeeList[0].employeeName}
-                    />
+                  <div className="employee-picture-modal dustin">
+                    <img src={dustin} alt="Dustin Blommaert" />
                   </div>
                   <div className="employee-bio-modal">
-                    <span>{this.state.employeeList[0].employeeBio}</span>
+                    <span>
+                      Dustin is an IT wizard specializing in Windows and Linux
+                      administration / support. He has earned his CompTIA A+
+                      certification and is currently working towards his RHCSA.
+                      In his down time Dustin enjoys chilling with his pup and
+                      PlayStation trophy hunting. He is also a big fan of bow
+                      ties.
+                    </span>
                   </div>
                   <i
                     className="fas fa-times-circle fa-2x text-danger mt-2"
@@ -152,17 +168,20 @@ export default class Clients extends Component {
               <div className="modal-content">
                 <div className="modal-body">
                   <div className="employee-name mb-3">
-                    <span>{this.state.employeeList[1].employeeName}</span>
+                    <span>Martina Bloem</span>
                   </div>
 
                   <div className="employee-picture-modal">
-                    <img
-                      src={this.state.employeeList[1].imgPath}
-                      alt={this.state.employeeList[1].employeeName}
-                    />
+                    <img src={martina} alt="Martina Bloem" />
                   </div>
                   <div className="employee-bio-modal">
-                    <span>{this.state.employeeList[1].employeeBio}</span>
+                    <span>
+                      Martina is an ambition and resourceful professional with
+                      over 20 years of administration experience. She provides
+                      the office administration and finance support, leaving the
+                      IT work to our experts! In her spare time she enjoys
+                      cuddling with her cats and playing video games.
+                    </span>
                   </div>
                   <i
                     className="fas fa-times-circle fa-2x text-danger"
@@ -180,17 +199,20 @@ export default class Clients extends Component {
               <div className="modal-content">
                 <div className="modal-body">
                   <div className="employee-name mb-3">
-                    <span>{this.state.employeeList[2].employeeName}</span>
+                    <span>Bryan Ramos</span>
                   </div>
 
                   <div className="employee-picture-modal">
-                    <img
-                      src={this.state.employeeList[2].imgPath}
-                      alt={this.state.employeeList[2].employeeName}
-                    />
+                    <img src={bryan} alt="Bryan Ramos" />
                   </div>
                   <div className="employee-bio-modal">
-                    <span>{this.state.employeeList[2].employeeBio}</span>
+                    <span>
+                      Bryan is an IT prodigy specializing in help desk and
+                      computer support. He has earned his CompTIA A+
+                      certification and is currently looking towards in
+                      increasing and learning more skills. Bryan enjoys the
+                      sport of basketball, music and cars.
+                    </span>
                   </div>
                   <i
                     className="fas fa-times-circle fa-2x text-danger"

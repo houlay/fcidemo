@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 import ClientCard from "../../ClientCard";
 import clientList from "../../client-list.json";
+import catchLogo from "../../../img/clients/catch-color-logo.png";
+import canaglobeLogo from "../../../img/clients/canaglobe-logo.png";
+import orionLogo from "../../../img/clients/orion-logo_Final.png";
+import barcliffLogo from "../../../img/clients/barcliff-logo.png";
+import delumaLogo from "../../../img/clients/deluma-logo.png";
 
 export default class Clients extends Component {
   state = {
-    clientList: clientList
+    clientList: clientList,
+    clientLogo: [catchLogo, canaglobeLogo, orionLogo, barcliffLogo, delumaLogo]
   };
 
   render() {
@@ -23,7 +29,8 @@ export default class Clients extends Component {
                     key={client.id}
                     id={client.id}
                     clientName={client.clientName}
-                    imgPath={client.imgPath}
+                    imgPath={this.state.clientLogo[client.id]}
+                    redirectUrl={client.redirectUrl}
                   />
                 ))}
               </div>

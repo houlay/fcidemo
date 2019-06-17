@@ -68,7 +68,7 @@ export default class Services extends Component {
               <h2 className="mb-5">What We Offer</h2>
             </div>
             <div className="row justify-content-around">
-              <div className="col-4 col-lg-3 col-sm-3 mb-5 mb-lg-5 service-box animated fadeInLeft delay-1s">
+              <div className="col-4 col-lg-3 col-sm-3 mb-5 mb-lg-5 service-box">
                 <span className="service-icon mx-auto mb-3">
                   <img src={serverPic} alt="Server Administration" />
                 </span>
@@ -88,7 +88,7 @@ export default class Services extends Component {
                   </span>
                 </div>
               </div>
-              <div className="col-4 col-lg-3 col-sm-3 mb-5 mb-lg-5 service-box animated fadeInDown delay-1s">
+              <div className="col-4 col-lg-3 col-sm-3 mb-5 mb-lg-5 service-box">
                 <span className="service-icon mx-auto mb-3">
                   <img src={windowsPic} alt="Windows Administration" />
                 </span>
@@ -108,7 +108,7 @@ export default class Services extends Component {
                   </span>
                 </div>
               </div>
-              <div className="col-4 col-lg-3 col-sm-3 mb-5 mb-lg-5 service-box animated fadeInRight delay-1s">
+              <div className="col-4 col-lg-3 col-sm-3 mb-5 mb-lg-5 service-box">
                 <span className="service-icon mx-auto mb-3">
                   <img src={linuxPic} alt="Linux Administration" />
                 </span>
@@ -130,7 +130,7 @@ export default class Services extends Component {
               </div>
             </div>
             <div className="row justify-content-around">
-              <div className="col-4 col-lg-3 col-sm-3 mb-5 mb-lg-5 service-box animated fadeInLeft delay-1s">
+              <div className="col-4 col-lg-3 col-sm-3 mb-5 mb-lg-5 service-box">
                 <span className="service-icon mx-auto mb-3">
                   <img src={desktopPic} alt="Desktop Application Support" />
                 </span>
@@ -150,7 +150,7 @@ export default class Services extends Component {
                   </span>
                 </div>
               </div>
-              <div className="col-4 col-lg-3 col-sm-3 mb-5 mb-lg-5 service-box animated fadeInUp delay-1s">
+              <div className="col-4 col-lg-3 col-sm-3 mb-5 mb-lg-5 service-box">
                 <span className="service-icon mx-auto mb-3">
                   <img src={networkPic} alt="Network Security and Design" />
                 </span>
@@ -170,7 +170,7 @@ export default class Services extends Component {
                   </span>
                 </div>
               </div>
-              <div className="col-4 col-lg-3 col-sm-3 mb-5 mb-lg-5 service-box animated fadeInRight delay-1s">
+              <div className="col-4 col-lg-3 col-sm-3 mb-5 mb-lg-5 service-box">
                 <span className="service-icon mx-auto mb-3">
                   <img src={sitePic} alt="Site Surveillance" />
                 </span>

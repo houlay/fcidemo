@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link, Element, animateScroll as scroll } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 import Title from "../layout/Sections/Title";
 import About from "../layout/Sections/About";
@@ -10,6 +11,8 @@ import Testimonials from "../layout/Sections/Testimonials";
 import Contact from "../layout/Sections/Contact";
 
 import Client from "../LiveChat/Client";
+
+import fci_logo from "../../img/fci-logo.png";
 
 export default class Landing extends Component {
   scrollToTop = () => {
@@ -23,7 +26,7 @@ export default class Landing extends Component {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <a className="navbar-brand" href="/">
             <img
-              src="http://www.fiala.ca/wp-content/uploads/2016/04/cropped-EF-Colour-5thickD.png"
+              src={fci_logo}
               width="30"
               height="30"
               className="d-inline-block align-top mr-2"
@@ -46,7 +49,7 @@ export default class Landing extends Component {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
+              <li className="nav-item dropdown-menu-custom">
                 <Link
                   className="nav-link"
                   to="about"
@@ -57,8 +60,14 @@ export default class Landing extends Component {
                 >
                   About
                 </Link>
+                <div className="padder">
+                  <div className="dropdown-content hide-on-break">
+                    <RouterLink to="/test1">Why choose us</RouterLink>
+                    <RouterLink to="/test2">The FCI approach</RouterLink>
+                  </div>
+                </div>
               </li>
-              <li className="nav-item">
+              <li className="nav-item dropdown-menu-custom">
                 <Link
                   className="nav-link"
                   to="services"
@@ -69,6 +78,26 @@ export default class Landing extends Component {
                 >
                   Services
                 </Link>
+                <div className="padder">
+                  <div className="dropdown-content hide-on-break">
+                    <RouterLink to="/allservices">
+                      Server Administration
+                    </RouterLink>
+                    <RouterLink to="/allservices">
+                      Windows Administration
+                    </RouterLink>
+                    <RouterLink to="/allservices">
+                      Linux Administration
+                    </RouterLink>
+                    <RouterLink to="/allservices">
+                      Desktop Application Support
+                    </RouterLink>
+                    <RouterLink to="/allservices">
+                      Network Security and Design
+                    </RouterLink>
+                    <RouterLink to="/allservices">Site Surveillance</RouterLink>
+                  </div>
+                </div>
               </li>
               <li className="nav-item">
                 <Link
@@ -119,7 +148,7 @@ export default class Landing extends Component {
                 </Link>
               </li>
             </ul>
-            <span class="navbar-text hide-on-break">| (587) 885-1123 </span>
+            <span className="navbar-text hide-on-break">| (587) 885-1123 </span>
           </div>
         </nav>
 

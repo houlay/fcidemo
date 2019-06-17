@@ -5,6 +5,7 @@ import MDSpinner from "react-md-spinner";
 import * as ReactDOM from "react-dom";
 
 import config from "../../config";
+import "./style.css";
 
 const agentUID = config.agentUID;
 const AGENT_MESSAGE_LISTENER_KEY = "agent-listener";
@@ -16,7 +17,8 @@ export default class Agent extends Component {
     selectedCustomer: "",
     chat: [],
     chatIsLoading: false,
-    customerIsLoading: true
+    customerIsLoading: true,
+    newMsgAlert: false
   };
 
   componentDidMount() {
@@ -41,7 +43,8 @@ export default class Agent extends Component {
                 if (selectedCustomer === message.sender.uid) {
                   chat.push(message);
                   this.setState({
-                    chat
+                    chat,
+                    newMsgAlert: true
                   });
                 } else {
                   let aRegisteredCustomer = customers.filter(customer => {
@@ -53,6 +56,7 @@ export default class Agent extends Component {
                       customers
                     });
                   }
+                  // need logic here to send unread alert only to the correct uid
                 }
               }
             })
@@ -112,7 +116,8 @@ export default class Agent extends Component {
   selectCustomer = uid => {
     this.setState(
       {
-        selectedCustomer: uid
+        selectedCustomer: uid,
+        newMsgAlert: false
       },
       () => {
         this.fetchPreviousMessage(uid);
@@ -301,7 +306,12 @@ class ChatBox extends Component {
 
 class CustomerList extends Component {
   render() {
-    const { customers, customerIsLoading, selectedCustomer } = this.props;
+    const {
+      customers,
+      customerIsLoading,
+      selectedCustomer,
+      newMsgAlert
+    } = this.props;
     if (customerIsLoading) {
       return (
         <div className="col-xl-12 my-auto text-center">
@@ -320,6 +330,7 @@ class CustomerList extends Component {
               onClick={() => this.props.selectCustomer(customer.uid)}
             >
               {customer.name}{" "}
+              <span className={newMsgAlert ? "unread" : "read"}>NEW!</span>
             </li>
           ))}
         </ul>

@@ -1,0 +1,9 @@
+.unread,
+.read {
+  float: right;
+  color: red;
+}
+
+.read {
+  display: none;
+}

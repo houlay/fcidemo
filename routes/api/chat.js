@@ -4,7 +4,7 @@ const router = express.Router();
 
 const appID = "37819ef5ab1587";
 const apiKey = "86a8bd3bd2c8070dc1e13d0d3288bced818ddfb7";
-const agentUID = "demo-agent";
+const agentUID = "agenta";
 
 const url = "https://api.cometchat.com/v1";
 

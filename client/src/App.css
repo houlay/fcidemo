@@ -2,7 +2,6 @@ h3 {
   font-family: "Baloo Bhaina", cursive;
   font-size: 40px;
 }
-
 .content-section {
   height: 100vh;
 }
@@ -32,6 +31,36 @@ h3 {
 .navbar a:hover {
   cursor: pointer;
 }
+/* .dropdown-menu-custom {
+  position: relative;
+  display: inline-block;
+} */
+/* .dropdown-menu-custom .padder {
+  padding-top: 10px;
+  position: relative;
+  display: inline-block;
+} */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown-menu-custom:hover .dropdown-content {
+  display: block;
+}
+
 .modal-dialog {
   position: absolute;
   top: 50%;
@@ -46,14 +75,14 @@ h3 {
   background-position: center;
   background-size: cover;
 }
-.title-bar {
+/* .title-bar {
   background-color: white;
   position: fixed;
   clear: both;
   height: 170px;
   width: 100%;
   z-index: 2;
-}
+} */
 .title-phrase {
   color: white;
   margin-top: 200px;
@@ -138,12 +167,18 @@ span {
   background-position: center;
   background-size: cover;
 }
+.team-card .card {
+  opacity: 1;
+}
 .employee-bio {
   font-size: 60%;
 }
 .employee-picture img {
-  height: 100%;
-  width: 100%;
+  border-radius: 8px;
+  height: 282px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .employee-name {
   font-size: 35px;
@@ -165,6 +200,9 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.client-card .card-body {
+  height: 112px;
 }
 #testimonials {
   background-image: url("./img/bg-testimonials.jpg");
@@ -203,6 +241,15 @@ span {
 .social-networks a {
   color: black;
 }
+#servicesinfo {
+  background-image: url("./img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#servicesinfo .container {
+  margin-top: 56px;
+}
 /* on mobile phones */
 @media only screen and (max-width: 768px) {
   .content-section {
@@ -224,8 +271,10 @@ span {
     padding: 15px 7px 0px 7px;
   }
   .client-card img {
-    width: 100%;
-    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: scale-down;
   }
   .show-on-break {
     display: block;
@@ -275,59 +324,81 @@ span {
     display: none;
   }
 }
-
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .card-body {
     font-size: 27.5px;
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .pagenation {
-    display: none;
-  }
-}
-@media only screen and (max-width: 1435px) {
-  .pagenation {
-    display: none;
-  }
-}
-
-@media only screen and (max-height: 945px) {
-  .employee-picture {
-    height: 70%;
-    width: 70%;
-    margin: auto;
-  }
-}
-
 /* vertical breakpoint */
-/* @media only screen and (max-height: 962px) {
+@media only screen and (max-height: 900px) {
   .content-section {
     height: 100%;
+    padding-bottom: 30px;
   }
-  .hide-on-break {
-    display: none;
+  .title {
+    height: 100vh;
+  }
+  .title-phrase {
+    margin-top: 100px;
   }
   .resize-on-break {
-    font-size: 16.5px;
+    font-size: 12px;
   }
   .card-body {
     font-size: 16.5px;
   }
+  .team-card span {
+    font-size: 28px;
+  }
   .clients-container {
     height: 450px;
     overflow-y: scroll;
+    overflow-x: hidden;
     padding: 15px 7px 0px 7px;
-  }
-  .client-card img {
-    width: 100%;
-    height: auto;
   }
   .show-on-break {
     display: block;
   }
-} */
+  .service-modal-container {
+    font-size: 12px;
+  }
+  .service-modal-container h3 {
+    font-size: 21px;
+  }
+  .contact-info {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .social-networks {
+    width: 100%;
+  }
+  .contact-modal {
+    margin-top: 135px;
+  }
+  .overlay-left,
+  .overlay-right {
+    height: 100vh;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .title-phrase {
+    color: white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  .overlay-left,
+  .overlay-right {
+    height: 100vh;
+  }
+}
+@media only screen and (max-height: 533px) {
+  #title {
+    display: none;
+  }
+}
+
 /* on large devices */
 @media only screen and (min-width: 768px) {
   .col-lg-3 {
@@ -339,5 +410,11 @@ span {
   }
   .show-on-break {
     display: none;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .employee-bio {
+    height: 280px;
+    padding-top: 20px;
   }
 }

@@ -1,27 +1,32 @@
 [
   {
+    "id": 0,
+    "imgPath": "../../../img/clients/catch-color-logo.png",
+    "clientName": "Catch Engineering",
+    "redirectUrl": "http://www.catchengineering.com"
+  },
+  {
     "id": 1,
-    "imgPath": "http://www.catchengineering.com/wp-content/uploads/2018/04/catch-color-logo.png",
-    "clientName": "Catch Engineering"
+    "imgPath": "../../../img/clients/canaglobe-logo.png",
+    "clientName": "CanaGlobe Compliance Solutions Inc.",
+    "redirectUrl": "http://www.canaglobecompliance.com/"
   },
   {
     "id": 2,
-    "imgPath": "http://www.normaengineering.com/wp-content/uploads/2013/10/logo.png",
-    "clientName": "Norma Engineering"
+    "imgPath": "../../../img/clients/orion-logo_Final.png",
+    "clientName": "Orion Projects",
+    "redirectUrl": "http://orion-projects.ca/"
   },
   {
     "id": 3,
-    "imgPath": "http://orion-projects.ca/images/orion-logo_Final.png",
-    "clientName": "Orion Projects"
+    "imgPath": "../../../img/clients/barcliff-logo.png",
+    "clientName": "Barcliff Energy Services Ltd",
+    "redirectUrl": "http://barcliffenergy.com/"
   },
   {
     "id": 4,
-    "imgPath": "https://static.wixstatic.com/media/df852e_31cca45ade134e2a831d9d638ad1a914~mv2.jpg/v1/fill/w_102,h_60,al_c,q_80,usm_0.66_1.00_0.01/df852e_31cca45ade134e2a831d9d638ad1a914~mv2.webp",
-    "clientName": "Au-zone Technologies Inc."
-  },
-  {
-    "id": 5,
-    "imgPath": "http://www.deluma.com/images/logo.png",
-    "clientName": "Deluma Engineering"
+    "imgPath": "../../../img/clients/deluma-logo.png",
+    "clientName": "Deluma Engineering",
+    "redirectUrl": "http://www.deluma.com/"
   }
 ]
