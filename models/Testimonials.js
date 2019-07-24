@@ -9,9 +9,17 @@ const testimonialSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  email: {
+    type: String,
+    default: "No email address were provided"
+  },
   comment: {
     type: String,
     required: true
+  },
+  approved: {
+    type: Boolean,
+    default: false
   },
   date: {
     type: Date,

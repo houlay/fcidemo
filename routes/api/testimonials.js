@@ -20,11 +20,10 @@ router.get("/", async (req, res) => {
 
 // @route   POST api/testimonials
 // @desc    Create a testimonial
-// @access  Private
+// @access  Public
 router.post(
   "/",
   [
-    auth,
     [
       check("client", "Client field is required")
         .not()
@@ -33,6 +32,9 @@ router.post(
         .not()
         .isEmpty(),
       check("comment", "Comment field is required")
+        .not()
+        .isEmpty(),
+      check("email", "Email field is required")
         .not()
         .isEmpty()
     ]
@@ -43,12 +45,13 @@ router.post(
       return res.status(400).json({ errors: errors.array() });
     }
 
-    const { client, company, comment } = req.body;
+    const { client, company, comment, email } = req.body;
 
     const testimonialFields = {};
     if (client) testimonialFields.client = client;
     if (company) testimonialFields.company = company;
     if (comment) testimonialFields.comment = comment;
+    if (email) testimonialFields.email = email;
 
     try {
       testimonial = new Testimonials(testimonialFields);
@@ -66,12 +69,14 @@ router.post(
 // @desc    Update a testimonial
 // @access  Private
 router.post("/:id", auth, async (req, res) => {
-  const { client, company, comment } = req.body;
+  const { client, company, comment, email, approved } = req.body;
 
   const testimonialFields = {};
   if (client) testimonialFields.client = client;
   if (company) testimonialFields.company = company;
   if (comment) testimonialFields.comment = comment;
+  if (email) testimonialFields.email = email;
+  if (approved) testimonialFields.approved = approved;
 
   try {
     let testimonial = Testimonials.findOne({ _id: req.params.id });

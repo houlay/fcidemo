@@ -1,9 +1,20 @@
-import React from "react";
+import React, { Fragment, useEffect } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { getTestimonials } from "../../../actions/testimonial";
 import TestimonialCard from "../../TestimonialCard";
+import AddReview from "../../TestimonialCard/AddReview";
 
-const Testimonials = () => {
+const Testimonials = ({
+  getTestimonials,
+  testimonial: { testimonials, loading }
+}) => {
+  useEffect(() => {
+    getTestimonials();
+  }, [getTestimonials]);
+
   return (
-    <div>
+    <Fragment>
       <div className="content-section" id="testimonials">
         <div className="container text-center">
           <div className="content-section-heading section-contrast">
@@ -16,26 +27,42 @@ const Testimonials = () => {
             className="carousel slide"
             data-ride="carousel"
           >
-            <ol className="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="0"
-                className="active"
-              />
-              <li data-target="#carouselExampleIndicators" data-slide-to="1" />
-              <li data-target="#carouselExampleIndicators" data-slide-to="2" />
-            </ol>
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <TestimonialCard />
+                <div className="testimonial-container">
+                  <div className="testimonial-message">
+                    <p>
+                      "FCI IT Services has a knowledgeable team of IT experts
+                      who are readily available and always willing to help.
+                      During various projects we have pursued over the years,
+                      FCI has provided excellent recommendations to accommodate
+                      to our needs while providing sincere and efficient
+                      service. The FCI team effectively simplifies foreign IT
+                      terminology and processes that makes solving IT problems a
+                      lot less intimidating and complex. We greatly appreciate
+                      the patience and effort FCI has dedicated to us during our
+                      long-standing relationship.”
+                    </p>
+                  </div>
+                  <div className="testimonial-by">
+                    <span>- Christie, </span>
+                    <span>Orion Projects</span>
+                  </div>
+                </div>
               </div>
-              <div className="carousel-item">
-                <TestimonialCard />{" "}
-              </div>
-              <div className="carousel-item">
-                <TestimonialCard />{" "}
-              </div>
+
+              {testimonials
+                .filter(testimonials => testimonials.approved)
+                .map(testimonial => (
+                  <div className="carousel-item">
+                    <TestimonialCard
+                      key={testimonial._id}
+                      testimonial={testimonial}
+                    />
+                  </div>
+                ))}
             </div>
+
             <a
               className="carousel-control-prev"
               href="#carouselExampleIndicators"
@@ -55,10 +82,31 @@ const Testimonials = () => {
               <span className="sr-only">Next</span>
             </a>
           </div>
+          <button
+            className="btn btn-dark mt-3"
+            data-toggle="modal"
+            data-target="#review-modal"
+          >
+            Leave us a review!
+          </button>
         </div>
       </div>
-    </div>
+
+      <AddReview />
+    </Fragment>
   );
 };
 
-export default Testimonials;
+Testimonials.propTypes = {
+  getTestimonials: PropTypes.func.isRequired,
+  testimonial: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+  testimonial: state.testimonial
+});
+
+export default connect(
+  mapStateToProps,
+  { getTestimonials }
+)(Testimonials);

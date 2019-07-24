@@ -158,6 +158,9 @@ span {
 .close-icon {
   text-align: center;
 }
+.close-icon:hover {
+  cursor: pointer;
+}
 .learn-more:hover {
   cursor: pointer;
 }
@@ -209,6 +212,18 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.review-modal-container h3,
+span {
+  text-align: center;
+}
+.review-modal-container .btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.review-description {
+  text-align: center;
 }
 .section-contrast {
   color: black;
@@ -349,7 +364,7 @@ span {
     font-size: 16.5px;
   }
   .team-card span {
-    font-size: 28px;
+    font-size: 18px;
   }
   .clients-container {
     height: 450px;
