@@ -5,6 +5,7 @@ import "./style.css";
 import Agent from "../../LiveChat/Agent";
 import Header from "./Header";
 import ReviewMgmt from "./ReviewMgmt";
+import UserMgmt from "./UserMgmt";
 
 const Dashboard = props => {
   return (
@@ -21,7 +22,7 @@ const Dashboard = props => {
           <Agent />
         </TabPanel>
         <TabPanel>
-          <h2>Users</h2>
+          <UserMgmt />
         </TabPanel>
         <TabPanel>
           <ReviewMgmt />
