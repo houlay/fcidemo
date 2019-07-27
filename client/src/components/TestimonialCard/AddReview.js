@@ -61,7 +61,6 @@ const AddReview = ({ addTestimonial, history }) => {
                       name="client"
                       value={client}
                       onChange={e => onChange(e)}
-                      required
                     />
                   </div>
 

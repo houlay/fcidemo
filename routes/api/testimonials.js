@@ -25,9 +25,6 @@ router.post(
   "/",
   [
     [
-      check("client", "Client field is required")
-        .not()
-        .isEmpty(),
       check("company", "Company field is required")
         .not()
         .isEmpty(),

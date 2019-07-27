@@ -11,8 +11,8 @@ const TestimonialCard = ({ testimonial: { client, company, comment } }) => {
           <p>"{comment}"</p>
         </div>
         <div className="testimonial-by">
-          <span>- {client}, </span>
-          <span>{company}</span>
+          <span>{client}</span>
+          <span>- {company}</span>
         </div>
       </div>
     </Fragment>

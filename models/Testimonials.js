@@ -2,8 +2,7 @@ const mongoose = require("mongoose");
 
 const testimonialSchema = new mongoose.Schema({
   client: {
-    type: String,
-    required: true
+    type: String
   },
   company: {
     type: String,
@@ -11,7 +10,7 @@ const testimonialSchema = new mongoose.Schema({
   },
   email: {
     type: String,
-    default: "No email address were provided"
+    default: "No email address provided"
   },
   comment: {
     type: String,
