@@ -27,23 +27,25 @@ const Testimonials = ({ getTestimonials, testimonial: { testimonials } }) => {
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <div className="testimonial-container">
-                  <div className="testimonial-message">
-                    <p>
-                      "FCI IT Services has a knowledgeable team of IT experts
-                      who are readily available and always willing to help.
-                      During various projects we have pursued over the years,
-                      FCI has provided excellent recommendations to accommodate
-                      to our needs while providing sincere and efficient
-                      service. The FCI team effectively simplifies foreign IT
-                      terminology and processes that makes solving IT problems a
-                      lot less intimidating and complex. We greatly appreciate
-                      the patience and effort FCI has dedicated to us during our
-                      long-standing relationship.”
-                    </p>
-                  </div>
-                  <div className="testimonial-by">
-                    <span>- Christie, </span>
-                    <span>Orion Projects</span>
+                  <div className="vertical-center">
+                    <div className="testimonial-message">
+                      <p>
+                        "FCI IT Services has a knowledgeable team of IT experts
+                        who are readily available and always willing to help.
+                        During various projects we have pursued over the years,
+                        FCI has provided excellent recommendations to
+                        accommodate to our needs while providing sincere and
+                        efficient service. The FCI team effectively simplifies
+                        foreign IT terminology and processes that makes solving
+                        IT problems a lot less intimidating and complex. We
+                        greatly appreciate the patience and effort FCI has
+                        dedicated to us during our long-standing relationship.”
+                      </p>
+                    </div>
+                    <div className="testimonial-by">
+                      <span>- Christie, </span>
+                      <span>Orion Projects</span>
+                    </div>
                   </div>
                 </div>
               </div>

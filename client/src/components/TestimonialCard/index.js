@@ -7,12 +7,14 @@ const TestimonialCard = ({ testimonial: { client, company, comment } }) => {
   return (
     <Fragment>
       <div className="testimonial-container">
-        <div className="testimonial-message">
-          <p>"{comment}"</p>
-        </div>
-        <div className="testimonial-by">
-          <span>{client}</span>
-          <span>- {company}</span>
+        <div className="vertical-center">
+          <div className="testimonial-message">
+            <p>"{comment}"</p>
+          </div>
+          <div className="testimonial-by">
+            <span>{client}</span>
+            <span>- {company}</span>
+          </div>
         </div>
       </div>
     </Fragment>

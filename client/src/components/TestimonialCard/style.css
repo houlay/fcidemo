@@ -3,9 +3,10 @@
   background-color: black;
   opacity: 0.7;
   color: white;
+  position: relative;
 }
 .testimonial-message {
-  padding: 50px 100px 30px 100px;
+  padding: 0px 100px 0px 100px;
   font-size: 21px;
 }
 .testimonial-by {
@@ -13,9 +14,16 @@
   font-size: 25px;
   font-style: italic;
 }
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 @media only screen and (max-width: 768px) {
   .testimonial-message {
-    padding: 50px 32px 30px 32px;
+    padding: 0px 32px 0px 32px;
     font-size: 15px;
   }
   .testimonial-by {
