@@ -264,6 +264,10 @@ span {
 }
 #servicesinfo .container {
   margin-top: 56px;
+  font-size: 130%;
+}
+.service-description {
+  margin-top: 40px;
 }
 /* on mobile phones */
 @media only screen and (max-width: 768px) {
@@ -299,6 +303,12 @@ span {
   }
   .service-modal-container h3 {
     font-size: 21px;
+  }
+  #servicesinfo .container {
+    font-size: 110%;
+  }
+  .service-description {
+    margin-top: 0px;
   }
   .title-bar {
     height: 80px;

@@ -6,11 +6,21 @@ import canaglobeLogo from "../../../img/clients/canaglobe-logo.png";
 import orionLogo from "../../../img/clients/orion-logo_Final.png";
 import barcliffLogo from "../../../img/clients/barcliff-logo.png";
 import delumaLogo from "../../../img/clients/deluma-logo.png";
+import dspcLogo from "../../../img/clients/DSPC-logo.png";
+import garrisonLogo from "../../../img/clients/garrison-logo.jpg";
 
 export default class Clients extends Component {
   state = {
     clientList: clientList,
-    clientLogo: [catchLogo, canaglobeLogo, orionLogo, barcliffLogo, delumaLogo]
+    clientLogo: [
+      catchLogo,
+      canaglobeLogo,
+      orionLogo,
+      barcliffLogo,
+      delumaLogo,
+      dspcLogo,
+      garrisonLogo
+    ]
   };
 
   render() {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import dustin from "../../../img/employees/dustin.png";
 import martina from "../../../img/employees/martina.jpg";
-import bryan from "../../../img/employees/bryan.png";
+import Amrit from "../../../img/employees/amrit.jpg";
 
 export default class Clients extends Component {
   state = {
@@ -102,7 +102,7 @@ export default class Clients extends Component {
                   <div className="card shadow">
                     <div className="card-body">
                       <div className="employee-name mb-3">
-                        <span>Bryan Ramos</span>
+                        <span>Amritpal Benipal</span>
                       </div>
                       <div className="click-for-more show-on-break text-info">
                         <i
@@ -111,15 +111,15 @@ export default class Clients extends Component {
                         />
                       </div>
                       <div className="employee-picture bryan hide-on-break">
-                        <img src={bryan} alt="Bryan" />
+                        <img src={Amrit} alt="Amritpal" />
                       </div>
                       <div className="employee-bio hide-on-break">
                         <span>
-                          Bryan is an IT prodigy specializing in help desk and
-                          computer support. He has earned his CompTIA A+
-                          certification and is currently looking towards in
-                          increasing and learning more skills. Bryan enjoys the
-                          sport of basketball, music and cars.{" "}
+                          Amrit is an IT support technician with a technical
+                          background.He has completed his Masters Degree in IT
+                          (Network) and is currently looking towards in
+                          increasing and learning more skills. Amrit enjoys the
+                          sport of cricket,camping and listening music.
                         </span>
                       </div>
                     </div>
@@ -199,19 +199,19 @@ export default class Clients extends Component {
               <div className="modal-content">
                 <div className="modal-body">
                   <div className="employee-name mb-3">
-                    <span>Bryan Ramos</span>
+                    <span>Amritpal Benipal</span>
                   </div>
 
                   <div className="employee-picture-modal">
-                    <img src={bryan} alt="Bryan Ramos" />
+                    <img src={Amrit} alt="Amritpal Benipal" />
                   </div>
                   <div className="employee-bio-modal">
                     <span>
-                      Bryan is an IT prodigy specializing in help desk and
-                      computer support. He has earned his CompTIA A+
-                      certification and is currently looking towards in
-                      increasing and learning more skills. Bryan enjoys the
-                      sport of basketball, music and cars.
+                      Amrit is an IT support technician with a technical
+                      background.He has completed his Masters Degree in IT
+                      (Network) and is currently looking towards in increasing
+                      and learning more skills. Amrit enjoys the sport of
+                      cricket,camping and listening music.
                     </span>
                   </div>
                   <i

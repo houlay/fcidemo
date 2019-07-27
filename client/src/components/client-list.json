@@ -28,5 +28,17 @@
     "imgPath": "../../../img/clients/deluma-logo.png",
     "clientName": "Deluma Engineering",
     "redirectUrl": "http://www.deluma.com/"
+  },
+  {
+    "id": 5,
+    "imgPath": "../../../img/clients/dspc-logo.png",
+    "clientName": "Douglas Square Pet Clinic",
+    "redirectUrl": "http://douglassquarepetclinic.com/"
+  },
+  {
+    "id": 6,
+    "imgPath": "../../../img/clients/garrison-logo.jpg",
+    "clientName": "Garrison Curling Club",
+    "redirectUrl": "https://garrisoncurling.com/"
   }
 ]

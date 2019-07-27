@@ -5,10 +5,7 @@ import { getTestimonials } from "../../../actions/testimonial";
 import TestimonialCard from "../../TestimonialCard";
 import AddReview from "../../TestimonialCard/AddReview";
 
-const Testimonials = ({
-  getTestimonials,
-  testimonial: { testimonials, loading }
-}) => {
+const Testimonials = ({ getTestimonials, testimonial: { testimonials } }) => {
   useEffect(() => {
     getTestimonials();
   }, [getTestimonials]);

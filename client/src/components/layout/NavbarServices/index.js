@@ -1,16 +1,11 @@
-import React from "react";
-import Client from "../LiveChat/Client";
-import fci_logo from "../../img/fci-logo.png";
-import { Link, Element } from "react-scroll";
+import React, { Fragment } from "react";
+import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
+import fci_logo from "../../../img/fci-logo.png";
 
-import Contact from "../layout/Sections/Contact";
-import Servicesinfo from "../layout/Sections/Servicesinfo";
-
-const Allservices = () => {
+const NavbarServices = () => {
   return (
-    <div>
-      <Client />
+    <Fragment>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a className="navbar-brand" href="/">
           <img
@@ -37,7 +32,13 @@ const Allservices = () => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item dropdown-menu-custom">
+            <li className="nav-item">
+              <RouterLink className="nav-link" to="/">
+                Home
+              </RouterLink>
+            </li>
+
+            {/* <li className="nav-item dropdown-menu-custom">
               <Link
                 className="nav-link"
                 to="about"
@@ -54,36 +55,29 @@ const Allservices = () => {
                   <RouterLink to="/test2">The FCI approach</RouterLink>
                 </div>
               </div>
-            </li>
+            </li> */}
             <li className="nav-item dropdown-menu-custom">
-              <Link
-                className="nav-link"
-                to="services"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                Services
-              </Link>
+              <Link className="nav-link">Services</Link>
               <div className="padder">
                 <div className="dropdown-content hide-on-break">
-                  <RouterLink to="/allservices">
+                  <RouterLink to="/server_administration">
                     Server Administration
                   </RouterLink>
-                  <RouterLink to="/allservices">
+                  <RouterLink to="/windows_administration">
                     Windows Administration
                   </RouterLink>
-                  <RouterLink to="/allservices">
+                  <RouterLink to="/linux_administration">
                     Linux Administration
                   </RouterLink>
-                  <RouterLink to="/allservices">
+                  <RouterLink to="/desktop_application_support">
                     Desktop Application Support
                   </RouterLink>
-                  <RouterLink to="/allservices">
+                  <RouterLink to="/network_security_and_design">
                     Network Security and Design
                   </RouterLink>
-                  <RouterLink to="/allservices">Site Surveillance</RouterLink>
+                  <RouterLink to="/site_surveillance">
+                    Site Surveillance
+                  </RouterLink>
                 </div>
               </div>
             </li>
@@ -104,13 +98,8 @@ const Allservices = () => {
           <span className="navbar-text hide-on-break">| (587) 885-1123 </span>
         </div>
       </nav>
-
-      <Servicesinfo />
-      <Element name="contact" className="element">
-        <Contact />
-      </Element>
-    </div>
+    </Fragment>
   );
 };
 
-export default Allservices;
+export default NavbarServices;

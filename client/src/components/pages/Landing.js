@@ -60,12 +60,12 @@ export default class Landing extends Component {
                 >
                   About
                 </Link>
-                <div className="padder">
+                {/* <div className="padder">
                   <div className="dropdown-content hide-on-break">
                     <RouterLink to="/test1">Why choose us</RouterLink>
                     <RouterLink to="/test2">The FCI approach</RouterLink>
                   </div>
-                </div>
+                </div> */}
               </li>
               <li className="nav-item dropdown-menu-custom">
                 <Link
@@ -80,22 +80,24 @@ export default class Landing extends Component {
                 </Link>
                 <div className="padder">
                   <div className="dropdown-content hide-on-break">
-                    <RouterLink to="/allservices">
+                    <RouterLink to="/server_administration">
                       Server Administration
                     </RouterLink>
-                    <RouterLink to="/allservices">
+                    <RouterLink to="/windows_administration">
                       Windows Administration
                     </RouterLink>
-                    <RouterLink to="/allservices">
+                    <RouterLink to="/linux_administration">
                       Linux Administration
                     </RouterLink>
-                    <RouterLink to="/allservices">
+                    <RouterLink to="/desktop_application_support">
                       Desktop Application Support
                     </RouterLink>
-                    <RouterLink to="/allservices">
+                    <RouterLink to="/network_security_and_design">
                       Network Security and Design
                     </RouterLink>
-                    <RouterLink to="/allservices">Site Surveillance</RouterLink>
+                    <RouterLink to="/site_surveillance">
+                      Site Surveillance
+                    </RouterLink>
                   </div>
                 </div>
               </li>
