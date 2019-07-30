@@ -33,8 +33,8 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <ScrollToTop>
-          <Route exact path="/" component={Landing} />
           <Switch>
+            <Route exact path="/" component={Landing} />
             <Route exact path="/admin" component={AdminLogin} />
             <Route exact path="/client" component={ClientLogin} />
             <Route
