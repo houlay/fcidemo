@@ -1,6 +1,7 @@
 import React from "react";
 import Client from "../LiveChat/Client";
 import { Element } from "react-scroll";
+import { Helmet } from "react-helmet";
 
 import Contact from "../layout/Sections/Contact";
 import NavbarServices from "../layout/NavbarServices";
@@ -8,6 +9,13 @@ import NavbarServices from "../layout/NavbarServices";
 const SiteSurveillance = () => {
   return (
     <div>
+      <Helmet>
+        <title>Site Surveillance - FCI IT Services</title>
+        <meta
+          name="description"
+          content="Physical site security is important for all businesses. IP surveillance is a proactive step towards a secure environment and with the advancement of video technology there are many high-quality options available. By leveraging existing network infrastructure and Power-over-Ethernet (PoE) capabilities we are able to provide reasonably priced options for any budget."
+        />
+      </Helmet>
       <Client />
       <NavbarServices />
       <Element name="services" className="element">

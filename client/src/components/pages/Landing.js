@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link, Element, animateScroll as scroll } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import Title from "../layout/Sections/Title";
 import About from "../layout/Sections/About";
@@ -22,6 +23,17 @@ export default class Landing extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>
+            FCI IT Services - Managed IT Services for small and medium sized
+            companies
+          </title>
+          <meta
+            name="description"
+            content="FCI IT Services Ltd. caters to small and medium businesses in all industry segments. Our qualified team can support your computer network and infrastructure as well as tend to all your technical support needs – ultimately leaving you free to do what you do best, run your business!"
+          />
+        </Helmet>
         <Client />
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <a className="navbar-brand" href="/">

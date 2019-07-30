@@ -36,7 +36,7 @@ export default class Contact extends Component {
               <div className="col-12 col-lg-4 mb-3">
                 <i className="fas fa-envelope fa-2x" />
                 <br />
-                <span>it@fiala.ca</span>
+                <span>it@fciit.ca</span>
               </div>
               <div className="col-12 col-lg-4 mb-3">
                 <i className="fas fa-phone fa-2x" />

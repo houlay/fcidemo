@@ -1,6 +1,7 @@
 import React from "react";
 import Client from "../LiveChat/Client";
 import { Element } from "react-scroll";
+import { Helmet } from "react-helmet";
 
 import Contact from "../layout/Sections/Contact";
 import NavbarServices from "../layout/NavbarServices";
@@ -8,6 +9,13 @@ import NavbarServices from "../layout/NavbarServices";
 const NetworkSecurity = () => {
   return (
     <div>
+      <Helmet>
+        <title>Network Security and Desgin - FCI IT Services</title>
+        <meta
+          name="description"
+          content="Resilient networks and connectivity are fundamental needs for today’s business. We have implemented many networks from the ground up – from small home file-and-print networks to larger enterprise-class networks we can assist your venture in promoting a secure networking environment and making the right choices."
+        />
+      </Helmet>
       <Client />
       <NavbarServices />
       <Element name="services" className="element">

@@ -1,6 +1,7 @@
 import React from "react";
 import Client from "../LiveChat/Client";
 import { Element } from "react-scroll";
+import { Helmet } from "react-helmet";
 
 import Contact from "../layout/Sections/Contact";
 import NavbarServices from "../layout/NavbarServices";
@@ -8,6 +9,13 @@ import NavbarServices from "../layout/NavbarServices";
 const WindowsAdmin = () => {
   return (
     <div>
+      <Helmet>
+        <title>Windows Administration - FCI IT Services</title>
+        <meta
+          name="description"
+          content="We have 20+ years experience working with various versions of the Windows Server and Windows Desktop operating systems. Our experts can assist with a number of different particularities of your Windows Server 2012, Windows Server 2008, Windows Server 2003, Windows Server 2000, and Windows NT systems: initial setup, regular maintenance, troubleshooting, and security audits."
+        />
+      </Helmet>
       <Client />
       <NavbarServices />
       <Element name="services" className="element">

@@ -1,6 +1,7 @@
 import React from "react";
 import Client from "../LiveChat/Client";
 import { Element } from "react-scroll";
+import { Helmet } from "react-helmet";
 
 import Contact from "../layout/Sections/Contact";
 import NavbarServices from "../layout/NavbarServices";
@@ -8,6 +9,13 @@ import NavbarServices from "../layout/NavbarServices";
 const LinuxAdmin = () => {
   return (
     <div>
+      <Helmet>
+        <title>Linux Administration - FCI IT Services</title>
+        <meta
+          name="description"
+          content="Whether you require domain management solutions, a LAMP (Linux / Apache / MySQL / PHP) server to host your corporate website, file and printer serving, network security solutions, an independent / third-party audit, or other, we can tailor an Open Source solution to meet your specific requirements."
+        />
+      </Helmet>
       <Client />
       <NavbarServices />
       <Element name="services" className="element">

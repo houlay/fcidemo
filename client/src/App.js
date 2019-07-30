@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 
 import Landing from "./components/pages/Landing";
@@ -31,30 +32,40 @@ const App = () => {
   return (
     <Provider store={store}>
       <Router>
-        <Route exact path="/" component={Landing} />
-        <Switch>
-          <Route exact path="/admin" component={AdminLogin} />
-          <Route exact path="/client" component={ClientLogin} />
-          <Route exact path="/server_administration" component={ServerAdmin} />
-          <Route
-            exact
-            path="/windows_administration"
-            component={WindowsAdmin}
-          />
-          <Route exact path="/linux_administration" component={LinuxAdmin} />
-          <Route
-            exact
-            path="/desktop_application_support"
-            component={DesktopAppSupp}
-          />
-          <Route
-            exact
-            path="/network_security_and_design"
-            component={NetworkSecurity}
-          />
-          <Route exact path="/site_surveillance" component={SiteSurveillance} />
-          <PrivateRoute exact path="/dashboard" component={Dashboard} />
-        </Switch>
+        <ScrollToTop>
+          <Route exact path="/" component={Landing} />
+          <Switch>
+            <Route exact path="/admin" component={AdminLogin} />
+            <Route exact path="/client" component={ClientLogin} />
+            <Route
+              exact
+              path="/server_administration"
+              component={ServerAdmin}
+            />
+            <Route
+              exact
+              path="/windows_administration"
+              component={WindowsAdmin}
+            />
+            <Route exact path="/linux_administration" component={LinuxAdmin} />
+            <Route
+              exact
+              path="/desktop_application_support"
+              component={DesktopAppSupp}
+            />
+            <Route
+              exact
+              path="/network_security_and_design"
+              component={NetworkSecurity}
+            />
+            <Route
+              exact
+              path="/site_surveillance"
+              component={SiteSurveillance}
+            />
+            <PrivateRoute exact path="/dashboard" component={Dashboard} />
+          </Switch>
+        </ScrollToTop>
       </Router>
     </Provider>
   );

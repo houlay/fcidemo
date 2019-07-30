@@ -1,6 +1,7 @@
 import React from "react";
 import Client from "../LiveChat/Client";
 import { Element } from "react-scroll";
+import { Helmet } from "react-helmet";
 
 import Contact from "../layout/Sections/Contact";
 import NavbarServices from "../layout/NavbarServices";
@@ -8,6 +9,13 @@ import NavbarServices from "../layout/NavbarServices";
 const DesktopAppSupp = () => {
   return (
     <div>
+      <Helmet>
+        <title>Desktop Application Support - FCI IT Services</title>
+        <meta
+          name="description"
+          content="End-user desktop and application support, our qualified staff can assist your users on a variety of platforms. From Windows, to MAC and Linux desktops, FCI IT Services Ltd. can untangle, troubleshoot and assist in all varieties of desktop support."
+        />
+      </Helmet>
       <Client />
       <NavbarServices />
       <Element name="services" className="element">
