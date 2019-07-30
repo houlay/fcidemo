@@ -1,0 +1,7 @@
+http://fcidemo.herokuapp.com/
+http://fcidemo.herokuapp.com/server_administration
+http://fcidemo.herokuapp.com/windows_administration
+http://fcidemo.herokuapp.com/linux_administration
+http://fcidemo.herokuapp.com/desktop_application_support
+http://fcidemo.herokuapp.com/network_security_and_design
+http://fcidemo.herokuapp.com/site_surveillance
