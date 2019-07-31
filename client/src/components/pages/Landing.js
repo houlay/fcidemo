@@ -26,8 +26,8 @@ export default class Landing extends Component {
         <Helmet>
           <meta charSet="utf-8" />
           <title>
-            FCI IT Services - Managed IT Services for small and medium sized
-            companies
+            FCI IT Services - Calgary Managed IT Services For Small and Medium
+            Sized Businesses
           </title>
           <meta
             name="description"
