@@ -36,15 +36,7 @@ export default function(state = initialState, action) {
         loading: false
       };
     case UPDATE_USER:
-      return {
-        ...state,
-        userList: state.userList.map(user =>
-          user._id === payload.id
-            ? { ...user, approved: payload.approved }
-            : user
-        ),
-        loading: false
-      };
+      return {};
     case USER_ERROR:
       return {
         ...state,

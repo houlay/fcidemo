@@ -14,10 +14,7 @@ const ReviewCard = ({
 }) => {
   return (
     <Fragment>
-      <a
-        href="#"
-        className="list-group-item list-group-item-action flex-column align-items-start"
-      >
+      <div className="list-group-item list-group-item-action flex-column align-items-start">
         <div className="d-flex w-100 justify-content-between">
           <h5 className="mb-1">
             {client}, {company}
@@ -47,7 +44,7 @@ const ReviewCard = ({
           <i className="fas fa-times mr-1" />
           Delete
         </button>
-      </a>
+      </div>
     </Fragment>
   );
 };

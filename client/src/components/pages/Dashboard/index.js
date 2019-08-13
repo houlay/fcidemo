@@ -8,7 +8,7 @@ import UserMgmt from "./UserMgmt";
 import { loaduser } from "../../../actions/auth";
 import store from "../../../store";
 
-const Dashboard = props => {
+const Dashboard = () => {
   useEffect(() => {
     store.dispatch(loaduser());
   }, []);

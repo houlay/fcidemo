@@ -11,10 +11,7 @@ const UserCard = ({
 }) => {
   return (
     <Fragment>
-      <a
-        href="#"
-        className="list-group-item list-group-item-action flex-column align-items-start"
-      >
+      <div className="list-group-item list-group-item-action flex-column align-items-start">
         <div className="d-flex w-100 justify-content-between">
           <h5 className="mb-1">{name}</h5>
           <small>
@@ -24,14 +21,14 @@ const UserCard = ({
         <p className="mb-1">Username: {email}</p>
         <p className="mb-1">Account Level: {level}</p>
         <br />
-        <button
+        {/* <button
           onClick={e => updateUser(_id)}
           type="button"
           className="btn btn-success mr-1"
         >
           <i className="fas fa-check mr-1" />
           Edit
-        </button>
+        </button> */}
         <button
           onClick={e => deleteUser(_id)}
           type="button"
@@ -40,7 +37,7 @@ const UserCard = ({
           <i className="fas fa-times mr-1" />
           Delete
         </button>
-      </a>
+      </div>
     </Fragment>
   );
 };

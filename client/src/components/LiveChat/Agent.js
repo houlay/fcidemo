@@ -181,9 +181,7 @@ export default class Agent extends Component {
                 className="col-lg-8 col-xs-12 bg-light"
                 style={{ height: 658 }}
               >
-                <div className="row p-3 bg-white">
-                  <h2 />
-                </div>
+                <div className="row p-3 bg-white" />
                 <div
                   name="chat-box"
                   className="row pt-5 bg-white element"

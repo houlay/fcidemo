@@ -5,7 +5,6 @@ import {
   TESTIMONIAL_ERROR,
   ADD_TESTIMONIAL,
   DELETE_TESTIMONIAL,
-  UPDATE_TESTIMONIAL,
   APPROVE_TESTIMONIAL
 } from "./types";
 
@@ -81,11 +80,7 @@ export const approveTestimonial = id => async dispatch => {
   };
 
   try {
-    const res = await axios.post(
-      `/api/testimonials/${id}`,
-      { approved: true },
-      config
-    );
+    await axios.post(`/api/testimonials/${id}`, { approved: true }, config);
 
     dispatch({
       type: APPROVE_TESTIMONIAL,
