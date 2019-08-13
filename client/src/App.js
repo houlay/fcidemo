@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
@@ -17,7 +17,6 @@ import PrivateRoute from "./components/routing/PrivateRoute";
 
 import { Provider } from "react-redux";
 import store from "./store";
-import { loaduser } from "./actions/auth";
 import setAuthToken from "./utils/setAuthToken";
 
 if (localStorage.token) {
@@ -25,10 +24,6 @@ if (localStorage.token) {
 }
 
 const App = () => {
-  useEffect(() => {
-    store.dispatch(loaduser());
-  }, []);
-
   return (
     <Provider store={store}>
       <Router>

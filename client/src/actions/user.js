@@ -1,12 +1,6 @@
 import axios from "axios";
 import { setAlert } from "./alert";
-import {
-  GET_USERS,
-  USER_ERROR,
-  ADD_USER,
-  UPDATE_USER,
-  DELETE_USER
-} from "./types";
+import { GET_USERS, USER_ERROR, ADD_USER, DELETE_USER } from "./types";
 
 // Get users
 export const getUsers = () => async dispatch => {
