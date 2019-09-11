@@ -1,5 +1,6 @@
 {
   "mongoURI": "mongodb://127.0.0.1/test?retryWrites=true",
   "jwtSecret": "mysecrettoken",
-  "agentUID": ""
+  "agentUID": "",
+  "test": ""
 }
